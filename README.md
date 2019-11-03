@@ -7,14 +7,20 @@ package (i.e., in releases of **pdfjam** prior to version 3.00).
 These scripts are explicitly **not supported**. Any and all issues 
 reported for these scripts, via GitHub, will simply be left open. 
 (Unless, of course, someone else decides to support the scripts in 
-a repository of their own.)  I make the scripts available
-here just in case someone might find them useful. (If somebody else wants to
+a repository of their own.)  
+
+I make the scripts available
+here just in case someone might find them useful. 
+
+If somebody else wants to
 improve and maintain these scripts as a separate package for distribution in
-future, then that's fine by me of course!) Licensed under GPL: see the file
+future, then that's fine by me of course! (and it would be warmly welcomed)
+
+Licensed under GPL: see the file
 COPYING for details. These scripts are provided with 
 **absolutely no warranty of fitness for any purpose whatsoever**.
 
-The wrapper scripts are:
+**The wrapper scripts are:**
 
 - `pdfnup`, `pdfpun`
 - `pdfjoin`
@@ -25,18 +31,20 @@ The wrapper scripts are:
 - `pdfjam-slides3up`, `pdfjam-slides6up`
 
 They all are intended as _example_ templates of scripts that end-users can make,
-in order to apply `pdfjam` conveniently on some specific tasks.
+in order to apply `pdfjam` conveniently on their specific tasks.
 
 I find that I now cannot support these 'wrapper' scripts as part of the **pdfjam** 
 package --- mainly because what people want from them seems to vary so much.  This
 results in quite a lot of questions and bug reports or feature requests, which
 most often I don't know how to handle.  I don't actually use most of
 these wrapper scripts myself --- I typically prefer to construct a suitable call to
-`pdfjam` directly. (An exception to that is that I _do_ often use
+`pdfjam` directly. 
+
+(An exception to that is that I _do_ often use
 `pdfjam-slides3up` and `pdfjam-slides6up`; but even there I have very specific 
 personal requirements, for example 4:3-shaped slides on A4 paper.)
 
-The `pdfjam` script itself, and its associated documentation, are still
+The `pdfjam` script itself and its associated documentation are still
 supported by me --- for the foreseeable future.
 
 _David Firth_, November 2019
