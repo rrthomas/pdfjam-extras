@@ -33,7 +33,7 @@ COPYING for details. These scripts are provided with
 They all are intended as _example_ templates of scripts that end-users can make,
 in order to apply `pdfjam` conveniently on their specific tasks.
 
-I find that I now cannot support these 'wrapper' scripts as part of the **pdfjam** 
+I now cannot support these 'wrapper' scripts as part of the **pdfjam** 
 package --- mainly because what people want from them seems to vary so much.  This
 results in quite a lot of questions and bug reports or feature requests, which
 most often I don't know how to handle.  I don't actually use most of
