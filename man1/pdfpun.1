@@ -1,0 +1,68 @@
+.TH "pdfpun" "1" "10 March 2010" "" "" 
+.SH "NAME" 
+pdfpun \- n-up the pages of a pdf file, with right-to-left ordering
+.SH "SYNOPSIS" 
+.PP 
+pdfpun SRC [PAGESPEC] --outfile FILENAME [OPTION [OPTION] \&.\&.\&.] 
+.PP 
+.SH "DESCRIPTION" 
+.PP 
+pdfpun converts a file in the Adobe Portable Document Format (PDF)
+to a "n-up" PDF file, that is, with multiple input pages 
+per output page, for
+more economical printing etc\&.  The pages are ordered right-to-left in the
+output.  The default processing is to 2-up 
+landscape output with no frame around pages, equivalent to using the 
+options '--nup 2x1 --landscape --frame false'.
+.PP
+SRC must be a PDF file; '/dev/stdin' can be used for PDF input via a pipeline.
+.PP
+If PAGESPEC is omitted, all pages are processed (equivalent to '-' as PAGESPEC)
+.PP
+OPTION is any option of pdfjam(1) other than --batch.
+.PP 
+pdfpun is a simple wrapper for pdfjam, which provides a front end to many 
+of the capabilities of the pdfpages package for pdflatex\&.  
+A working installation of pdflatex, with
+the pdfpages package, is required\&.
+.PP 
+pdfpun is part of the "PDFjam" package of tools, whose homepage is at
+http://www.warwick.ac.uk/go/pdfjam\&.
+.PP
+.SH "SETUP" 
+.PP
+See http://go.warwick.ac.uk/pdfjam .
+.PP
+.SH "USAGE" 
+.PP 
+For the available options and site/user defaults, see the output of 
+.PP
+.RS
+.B    pdfjam --help
+.RE
+.PP 
+For further information and some examples see 
+http://go.warwick.ac.uk/pdfjam \&.
+.PP
+.SH "LIMITATIONS AND BUGS" 
+.PP
+pdfpun does not work with encrypted PDF files, and does not 
+preserve hyperlinks.
+.PP
+The '--keepinfo' option does not work.
+.PP 
+Please report bugs! See the website at
+http://www.warwick.ac.uk/go/pdfjam \&.
+.PP 
+.SH "LICENSE" 
+.PP 
+PDFjam is distributed under the GNU public license\&. 
+.PP 
+.SH "SEE ALSO" 
+.PP 
+pdfjam(1) pdfnup(1)\&.
+.PP 
+.SH "AUTHOR" 
+.PP 
+pdfpun is written and maintained by David Firth as part of the PDFjam package\&.
+

@@ -1,0 +1,74 @@
+.TH "pdf270" "1" "10 March 2010" "" "" 
+.SH "NAME" 
+pdf270 \- rotate the pages of pdf files
+.SH "SYNOPSIS" 
+.PP 
+pdf270 [OPTION [OPTION] \&.\&.\&.] [SRC [PAGESPEC] [SRC [PAGESPEC]] \&.\&.\&.]
+.PP 
+.SH "DESCRIPTION" 
+.PP 
+pdf270 rotates the pages of files in the Adobe Portable Document Format (PDF)
+through 90 degrees (clockwise)\&.  
+.PP
+If no source PDF file ('SRC') is specified, input
+is from /dev/stdin. If 'PAGESPEC' is omitted, all pages are processed.
+.PP
+Source files are processed sequentially into a single output
+unless the '--batch' option is used, in which case they are processed 
+separately.
+.PP 
+pdf270 operates on one or more PDF files, and (either with the '--batch' 
+option or with '--outfile DIR' where 'DIR' is a directory) the 
+resulting files have
+the suffix 'rotated270' applied to their names by default.  To change 
+the suffix,
+use the '--suffix' option, for example
+.PP
+.RS
+.B    pdf270 --suffix '-turned' --batch myfile1.pdf myfile2.pdf
+.RE
+.PP 
+will result in files named 'myfile1-turned.pdf' and 'myfile2-turned.pdf'.
+.PP 
+pdf270 is a simple wrapper for pdfjam, which is a front end to many of the capabilities of the pdfpages
+package for pdflatex\&.  A working installation of pdflatex with
+the pdfpages package is required\&.
+.PP 
+pdf270 is part of the "PDFjam" package of tools, whose homepage is at
+http://go.warwick.ac.uk/pdfjam\&.
+.PP
+.SH "SETUP" 
+.PP
+See http://go.warwick.ac.uk/pdfjam .
+.PP
+.SH "USAGE" 
+.PP 
+For the available options and site/user defaults, see the output of 
+.PP
+.RS
+    pdfjam --help
+.RE
+.PP 
+For further information and some examples see 
+http://go.warwick.ac.uk/pdfjam .
+.PP
+.SH "LIMITATIONS AND BUGS" 
+.PP
+pdf270 does not work with encrypted PDF files, and does not 
+preserve hyperlinks.
+.PP 
+Please report bugs! See the website at
+http://go.warwick.ac.uk/pdfjam \&.
+.PP 
+.SH "SEE ALSO" 
+.PP 
+pdfjam(1)\&.
+.PP 
+.SH "LICENSE" 
+.PP 
+PDFjam is distributed under the GNU public license\&.  
+.PP 
+.SH "AUTHOR" 
+.PP 
+pdf270 is written and maintained by David Firth as part of the PDFjam package\&.
+
