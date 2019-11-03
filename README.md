@@ -20,7 +20,7 @@ Licensed under GPL: see the file
 COPYING for details. These scripts are provided with 
 **absolutely no warranty of fitness for any purpose whatsoever**.
 
-**The wrapper scripts are:**
+**_The wrapper scripts are_:**
 
 - `pdfnup`, `pdfpun`
 - `pdfjoin`
