@@ -4,13 +4,15 @@ This repository holds a copy of various 'wrapper' scripts that previously
 were distributed as part of the [pdfjam](https://github.com/DavidFirth/pdfjam)
 package (i.e., in releases of **pdfjam** prior to version 3.00).
 
-These scripts are explicitly **not supported**. I make them available
+These scripts are explicitly **not supported**. Any and all issues 
+reported for these scripts, via GitHub, will simply be left open. 
+(Unless, of course, someone else decides to support the scripts in 
+a repository of their own.)  I make the scripts available
 here just in case someone might find them useful. (If somebody else wants to
 improve and maintain these scripts as a separate package for distribution in
-future, then that's fine by me of course!)
-
-**Issues reported for these scripts, via GitHub, will simply be left open.** (Unless,
-of course, someone else decides to support the scripts in a repository of their own.)
+future, then that's fine by me of course!) Licensed under GPL: see the file
+COPYING for details. These scripts are provided with 
+**absolutely no warranty of fitness for any purpose whatsoever**.
 
 The wrapper scripts are:
 
@@ -113,7 +115,7 @@ and they are copied here just in case it helps someone.
 
 <h2 align="justify">Version history</h2>
 
-<p> <b>2.09: </b>settings specified via <tt>--preamble</tt> are now protected from the normal tidying of the TeX input file to remove redundant packages; and the default behaviour of <tt>pdfbook</tt> is reverted to its pre-2.06 state, because <tt>--booklet true</tt> seems to be problematic for some users.&nbsp; Also moved the package to a new home on the web at <a href="http://www.pdfjam.net">www.pdfjam.net</a>. [2011-06-13]
+<p> <b>2.09: </b>settings specified via <tt>--preamble</tt> are now protected from the normal tidying of the TeX input file to remove redundant packages; and the default behaviour of <tt>pdfbook</tt> is reverted to its pre-2.06 state, because <tt>--booklet true</tt> seems to be problematic for some users.&nbsp; [package version never released]
 </p>
 
 <p><b>2.08</b>: fixed a bug in one of the tests. [2010-11-14] </p>
