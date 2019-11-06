@@ -59,12 +59,12 @@ and they are copied here just in case it helps someone.
 <b>(snip)</b>
 
 <ul>
-  <li> <b><tt>pdfnup</tt></b>, which allows one or more PDF files to be "n-upped" in roughly the way that <a href="http://www.tardis.ed.ac.uk/%7Eajcd/psutils/psnup.html"><tt>psnup</tt></a> does for PostScript files. (This was the original motivation: for files that have to be printed, or have to be made available to dozens or hundreds of other people for printing, n-up formatting saves trees!)</li>
+  <li> <b><tt>pdfnup</tt></b>, which allows one or more PDF files to be "n-upped" in roughly the way that <a href="https://github.com/rrthomas/psutils"><tt>psnup</tt></a> does for PostScript files. (This was the original motivation: for files that have to be printed, or have to be made available to dozens or hundreds of other people for printing, n-up formatting saves trees!)</li>
   <li><b><tt>pdfpun</tt></b>, similar to <tt>pdfnup</tt> but arranges the source pages right-to-left on the output page, ie in a format more suitable for right-to-left languages. This script works only on one file at a time. (Thanks to Ido for suggesting this.)</li>
   <li> <b><tt>pdfjoin</tt></b>, which combines the pages of multiple PDF files together into a single file.</li>
   <li> <b><tt>pdf90</tt></b>, <b><tt>pdf180</tt></b> and <b><tt>pdf270</tt></b> which rotate the pages of one or more PDF files.</li>
   <li><b><tt>pdfflip</tt></b> which reflects the pages of one or more PDF files. (Suitable for making transparencies if you want to write on the back of them!)</li>
-  <li><b><tt>pdfbook</tt></b> which arranges pages into 2-up "signatures" (like <a href="http://www.tardis.ed.ac.uk/%7Eajcd/psutils/psbook.html"><tt>psbook</tt></a> does for PostScript files), suitable for binding into a book. (Many people have suggested that this would be useful — I hope it is!)</li>
+  <li><b><tt>pdfbook</tt></b> which arranges pages into 2-up "signatures" (like <a href="https://github.com/rrthomas/psutils"><tt>psbook</tt></a> does for PostScript files), suitable for binding into a book. (Many people have suggested that this would be useful — I hope it is!)</li>
   <li><b><tt>pdfjam-pocketmod</tt></b> which converts 8 pages from a single PDF file into a pocket-sized booklet. (<a href="http://repocketmod.com/">Folding instructions here!</a> Thanks to Thomas Nemeth for suggesting this.)</li>
   <li><b><tt>pdfjam-slides6up</tt></b> and <b><tt>pdfjam-slides3up</tt></b> which process PDF presentation slides to six-per-page or three-per-page for handout purposes. </li>
 </ul>
