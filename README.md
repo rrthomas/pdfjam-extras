@@ -65,7 +65,7 @@ and they are copied here just in case it helps someone.
   <li> <b><tt>pdf90</tt></b>, <b><tt>pdf180</tt></b> and <b><tt>pdf270</tt></b> which rotate the pages of one or more PDF files.</li>
   <li><b><tt>pdfflip</tt></b> which reflects the pages of one or more PDF files. (Suitable for making transparencies if you want to write on the back of them!)</li>
   <li><b><tt>pdfbook</tt></b> which arranges pages into 2-up "signatures" (like <a href="https://github.com/rrthomas/psutils"><tt>psbook</tt></a> does for PostScript files), suitable for binding into a book. (Many people have suggested that this would be useful — I hope it is!)</li>
-  <li><b><tt>pdfjam-pocketmod</tt></b> which converts 8 pages from a single PDF file into a pocket-sized booklet. (<a href="http://repocketmod.com/">Folding instructions here!</a> Thanks to Thomas Nemeth for suggesting this.)</li>
+  <li><b><tt>pdfjam-pocketmod</tt></b> which converts 8 pages from a single PDF file into a pocket-sized booklet. (<a href="https://pocketmod.com/howto">Folding instructions here!</a> Thanks to Thomas Nemeth for suggesting this.)</li>
   <li><b><tt>pdfjam-slides6up</tt></b> and <b><tt>pdfjam-slides3up</tt></b> which process PDF presentation slides to six-per-page or three-per-page for handout purposes. </li>
 </ul>
 
