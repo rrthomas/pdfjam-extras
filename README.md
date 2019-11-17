@@ -123,7 +123,7 @@ and they are copied here just in case it helps someone.
 
 <h2 align="justify">Version history</h2>
 
-<p> <b>2.09: The default behaviour of <tt>pdfbook</tt> is reverted to its pre-2.06 state, because <tt>--booklet true</tt> seems to be problematic for some users.&nbsp; [package version never released]
+<p> <b>2.09</b>: The default behaviour of <tt>pdfbook</tt> is reverted to its pre-2.06 state, because <tt>--booklet true</tt> seems to be problematic for some users.&nbsp; [package version never released]
 </p>
 
 <p><b>2.08</b>: fixed a bug in one of the tests. [2010-11-14] </p>
