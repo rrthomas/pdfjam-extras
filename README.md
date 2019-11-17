@@ -2,7 +2,7 @@
 
 This repository holds a copy of various 'wrapper' scripts that previously
 were distributed as part of the [pdfjam](https://github.com/DavidFirth/pdfjam)
-package (i.e., in releases of **pdfjam** prior to version 3.00).
+package (i.e., in releases of **pdfjam** prior to version 3.02).
 
 These scripts are explicitly **not supported**. Any and all issues 
 reported for these scripts, via GitHub, will simply be left open. 
