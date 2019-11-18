@@ -4,10 +4,14 @@ This repository holds a copy of various 'wrapper' scripts that previously
 were distributed as part of the [pdfjam](https://github.com/DavidFirth/pdfjam)
 package (i.e., in releases of **pdfjam** prior to version 3.02).
 
-These scripts are explicitly **not supported**. Any and all issues 
-reported for these scripts, via GitHub, will simply be left open. 
-(Unless, of course, someone else decides to support the scripts in 
-a repository of their own.)  
+These scripts are explicitly **not supported**.  In particular:
+
+- any and all issues reported for these scripts, via GitHub, 
+will simply be left open;
+- pull requests will not be merged.
+
+--- unless, of course, _someone else_ decides to support the scripts in 
+a repository of their own.
 
 I make the scripts available
 here just in case someone might find them useful. 
