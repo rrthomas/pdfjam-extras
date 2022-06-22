@@ -26,13 +26,17 @@ These scripts are explicitly **not supported** by the original authors of [pdfja
 
 The easy way (via a pre-packaged RPM):
 ```
-...
+wget https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras-0.1-0.noarch.rpm
+wget -O package-signing-key.pub https://breckon.org/toby/pgp.txt
+sudo rpm --import package-signing-key.pub
+sudo rpm -i pdfjam-extras-0.1-0.noarch.rpm
 ```
 [following RPM convention this installs the scripts into ``/usr/bin``]
 
 The hard way (manually download and install):
 ```
-...
+wget https://github.com/tobybreckon/pdfjam-extras/archive/refs/heads/master.zip
+unzip master.zip
 ```
 [following manual install convention this installs the scripts into ``/usr/local/bin``]
 
