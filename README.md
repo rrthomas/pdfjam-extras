@@ -37,6 +37,8 @@ The hard way (manually download and install):
 ```
 wget https://github.com/tobybreckon/pdfjam-extras/archive/refs/heads/master.zip
 unzip master.zip
+cd pdfjam-extras-master
+< ... TBC by adding an ./install.sh - missing currently ... >
 ```
 [following manual install convention this installs the scripts into ``/usr/local/bin``]
 
