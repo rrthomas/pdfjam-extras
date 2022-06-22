@@ -4,7 +4,8 @@
 ##  pdfpun: A shell program to n-up pages of a PDF file with
 ##          the n-upped pages ordered from right to left
 ##
-##  Author David Firth (http://go.warwick.ac.uk/dfirth)
+##  (c) 2019: David Firth (http://go.warwick.ac.uk/dfirth, original author)
+##  License: GPL (https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
 ##
 ##  This is a simple wrapper for (three runs of) pdfjam, version N.NN
 ##

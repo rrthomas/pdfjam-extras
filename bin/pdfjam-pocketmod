@@ -6,7 +6,8 @@
 ##  into an 8-up file with pages ordered and oriented for folding as
 ##  a pocket-sized booklet, as described at http://repocketmod.com/
 ##
-##  Author David Firth (http://go.warwick.ac.uk/dfirth)
+##  (c) 2019: David Firth (http://go.warwick.ac.uk/dfirth, original author)
+##  License: GPL (https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
 ##
 ##  This is a simple wrapper for (three runs of) pdfjam, version N.NN
 ##

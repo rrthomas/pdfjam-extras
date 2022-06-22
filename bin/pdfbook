@@ -4,8 +4,8 @@
 ##
 ##  pdfbook: Rearrange pages of one or more PDF files into 2-up signatures
 ##
-##  Author David Firth (http://go.warwick.ac.uk/dfirth), with help
-##  from Marco Pessotto
+##  (c) 2019: David Firth (http://go.warwick.ac.uk/dfirth, original author) + Marco Pessotto
+##  License: GPL (https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
 ##
 ##  This is a simple wrapper for pdfjam, version N.NN
 ##
