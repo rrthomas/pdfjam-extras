@@ -24,7 +24,7 @@ These scripts are explicitly **not supported** by the original authors of [pdfja
 
 ### Installing the scripts
 
-The easy way (via a pre-packaged RPM):
+The easy way (via a pre-packaged RPM, and signed public key):
 ```
 wget https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras-0.1-0.noarch.rpm
 wget -O package-signing-key.pub https://breckon.org/toby/pgp.txt
