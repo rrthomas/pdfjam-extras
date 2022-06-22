@@ -1,10 +1,14 @@
 #!/bin/sh
 ##
+################################################################################
+##
 ##  pdfnup: A shell program to n-up pages of PDF files
 ##
 ##  Author David Firth (http://go.warwick.ac.uk/dfirth)
 ##
 ##  This is a simple wrapper for pdfjam, version N.NN
+##
+################################################################################
 ##
 E_USAGE=64           ##  for a command line usage error
 for arg
@@ -25,5 +29,6 @@ do
     esac
 done
 exec pdfjam --suffix nup --nup 2x1 --landscape "$@"
-
-
+##
+################################################################################
+##

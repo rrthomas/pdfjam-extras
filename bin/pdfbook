@@ -1,18 +1,22 @@
-#!/bin/sh 
+#!/bin/sh
+##
+################################################################################
 ##
 ##  pdfbook: Rearrange pages of one or more PDF files into 2-up signatures
 ##
 ##  Author David Firth (http://go.warwick.ac.uk/dfirth), with help
 ##  from Marco Pessotto
 ##
-##  This is a simple wrapper for pdfjam, version N.NN 
+##  This is a simple wrapper for pdfjam, version N.NN
+##
+################################################################################
 ##
 case $1 in
     --short-edge)
 	shortedge=true ;
 	shift ;
 	;;
-    *) 
+    *)
 	;;
 esac
 for arg
@@ -25,19 +29,23 @@ do
 	*) ;;
     esac
 done
-## 
+##
+################################################################################
+##
 ## If $signature is empty, we need to use a default:
-## 
+##
 if test -z "$signature" ; then
     signature="--signature 4"
 else
     signature=""
 fi
 ##
+################################################################################
+##
 ## Make the call to pdfjam:
 ##
 if test -z "$shortedge"
-then 
+then
     exec pdfjam --landscape --suffix book $signature "$@"
 else
     (kpsewhich everyshi.sty >/dev/null) || {
@@ -50,6 +58,6 @@ else
 \makeatother
 ' "$@"
 fi
-
-
-
+##
+################################################################################
+##

@@ -1,11 +1,15 @@
 #!/bin/sh
 ##
-##  pdfjam-slides6up: A shell program to make a 6-up "handout" 
+################################################################################
+##
+##  pdfjam-slides6up: A shell program to make a 6-up "handout"
 ##  of presentation slides
 ##
 ##  Author David Firth (http://go.warwick.ac.uk/dfirth)
 ##
 ##  This is a simple wrapper for pdfjam, version N.NN
+##
+################################################################################
 ##
 footskip=2.7cm                           ## default setting
 pagecommand='{\thispagestyle{empty}}'    ## default setting
@@ -27,5 +31,6 @@ esac
 exec pdfjam --suffix 6up --nup 2x3 --frame true --noautoscale false \
   --delta "0.2cm 0.3cm" --scale 0.95 --preamble "\footskip $footskip" \
   --pagecommand "$pagecommand" "$@"
-
-
+##
+################################################################################
+##

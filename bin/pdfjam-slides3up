@@ -1,11 +1,15 @@
 #!/bin/sh
 ##
-##  pdfjam-slides3up: A shell program to make a 3-up "handout" 
+################################################################################
+##
+##  pdfjam-slides3up: A shell program to make a 3-up "handout"
 ##  of presentation slides, with space for side-notes
 ##
 ##  Author David Firth (http://go.warwick.ac.uk/dfirth)
 ##
 ##  This is a simple wrapper for pdfjam, version N.NN
+##
+################################################################################
 ##
 footskip=3.1cm                           ## default setting
 pagecommand='{\thispagestyle{empty}}'    ## default setting
@@ -27,3 +31,6 @@ esac
 exec pdfjam --suffix 3up --nup 1x3 --frame true --noautoscale false \
   --delta "0cm 0.2cm" --scale 0.87 --offset "-3.8cm 0cm" \
   --preamble "\footskip $footskip" --pagecommand "$pagecommand" "$@"
+##
+################################################################################
+##
