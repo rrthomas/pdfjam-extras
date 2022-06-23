@@ -79,3 +79,19 @@ at the terminal gives information about usage and other aspects of the ``pdfjam-
 **pdfjam 2.06**: changed the ``pdfbook`` script to include ``--booklet true`` as the default behaviour (thanks to Julien Bossert for this good suggestion). [2010-05-11]
 
 **pdfjam 2.05**: changes to the ``pdfbook`` script [the ``--right-edge-binding`` option is now redundant, and there's a new ``--short-edge`` option for binding along the short edge of pages instead of the long edge (thanks to Marco Pessotto for this)]. The ``--preamble`` option to ``pdfjam`` is enhanced, to allow multiple instances which get concatenated. Also various minor corrections to man pages. [2010-04-25]
+
+---
+
+##### Building the RPM ...
+
+As as _aide memoir_ to myself, this is how to re-build the rpm:
+
+```
+git clone git@github.com:tobybreckon/pdfjam-extras.git
+rpmdev-setuptree
+ln -s ~/pdfjam-extras/pdfjam-extras.spec ~/rpmbuild/SPECS/
+cd ~/rpmbuild/
+rpmbuild -bb SPECS/pdfjam-extras.spec
+sudo rpmsign --addsign RPMS/noarch/pdfjam-extras-0.1-0.noarch.rpm
+rpm --checksig RPMS/noarch/pdfjam-extras-0.1-0.noarch.rpm
+```
