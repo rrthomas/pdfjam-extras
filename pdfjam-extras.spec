@@ -8,7 +8,7 @@ Name:           pdfjam-extras
 Version:        0.1
 Release:        0
 Summary:        a set of additional utility scripts for pdfjam
-License:        GPL
+License:        GPLv2
 URL:            https://github.com/tobybreckon/pdfjam-extras/
 Group:          System
 BuildArch:      noarch
