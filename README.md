@@ -50,11 +50,11 @@ Below are some excerpts from an old _pdfjam-README_ file (from version 2.09 of t
 
 
 - ``pdfnup``, which allows one or more PDF files to be "n-upped" in roughly the way that [``psnup``](https://github.com/rrthomas/psutils) does for PostScript files. (This was the original motivation: for files that have to be printed, or have to be made available to dozens or hundreds of other people for printing, n-up formatting saves trees!)
--``pdfpun``, similar to ``pdfnup`` but arranges the source pages right-to-left on the output page, ie in a format more suitable for right-to-left languages. This script works only on one file at a time.
+- ``pdfpun``, similar to ``pdfnup`` but arranges the source pages right-to-left on the output page, ie in a format more suitable for right-to-left languages. This script works only on one file at a time.
 - ``pdfjoin``, which combines the pages of multiple PDF files together into a single file.
--``pdf90``, ``pdf180`` and ``pdf270`` which rotate the pages of one or more PDF files.
--``pdfflip`` which reflects the pages of one or more PDF files. (Suitable for making transparencies if you want to write on the back of them!)
--``pdfbook`` which arranges pages into 2-up "signatures" (like [``psnup``](https://github.com/rrthomas/psutils) does for PostScript files), suitable for binding into a book.
+- ``pdf90``, ``pdf180`` and ``pdf270`` which rotate the pages of one or more PDF files.
+- ``pdfflip`` which reflects the pages of one or more PDF files. (Suitable for making transparencies if you want to write on the back of them!)
+- ``pdfbook`` which arranges pages into 2-up "signatures" (like [``psnup``](https://github.com/rrthomas/psutils) does for PostScript files), suitable for binding into a book.
 - ``pdfjam-pocketmod`` which converts 8 pages from a single PDF file into a pocket-sized booklet (with [folding instructions here](https://pocketmod.com/howto)).
 - ``pdfjam-slides6up`` and ``pdfjam-slides3up`` which process PDF presentation slides to six-per-page or three-per-page for handout purposes.
 
