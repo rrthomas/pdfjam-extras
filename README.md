@@ -2,9 +2,9 @@
 
 A separately packaged version of the 'wrapper' scripts that previously were distributed as part of the [pdfjam](https://github.com/DavidFirth/pdfjam) package (i.e. in releases of **pdfjam** prior to version 3.02) so that they are easy to install.
 
-**why** ?: these scripts were just _too_ useful for me and used in so many of my other scripts it would have been _(a)_ a huge job to migrate to pure [pdfjam](https://github.com/DavidFirth/pdfjam) commands or _(b)_ really annoying to have to manually install these with every linux upgrade/host/install.
+**why** ? : these scripts were just _too_ useful for me and used in so many of my other scripts it would have been _(a)_ a huge job to migrate to pure [pdfjam](https://github.com/DavidFirth/pdfjam) commands or _(b)_ really annoying to have to manually install these with every linux upgrade/host/install.
 
-**what** ?: a packaged version of the ``pdf[nup,pun,join,90,180,270,flip,book,pocketmod,slides*up]`` scripts that were originally included (and installed) as part of [pdfjam](https://github.com/DavidFirth/pdfjam).
+**what** ? : a packaged version of the ``pdf[nup,pun,join,90,180,270,flip,book,pocketmod,slides*up]`` scripts that were originally included (and installed) as part of [pdfjam](https://github.com/DavidFirth/pdfjam).
 
 **[RPM download here](https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras-0.1-0.noarch.rpm)** and manual install instructions below.
 
@@ -38,7 +38,7 @@ The hard way (manually download and install):
 wget https://github.com/tobybreckon/pdfjam-extras/archive/refs/heads/master.zip
 unzip master.zip
 cd pdfjam-extras-master
-< ... TBC by adding an ./install.sh - missing currently ... >
+sudo sh ./install.sh
 ```
 [following manual install convention this installs the scripts into ``/usr/local/bin``]
 
