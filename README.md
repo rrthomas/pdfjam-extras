@@ -33,10 +33,9 @@ sudo rpm -i pdfjam-extras-0.1-0.noarch.rpm
 ```
 [following RPM convention this installs the scripts into ``/usr/bin``]
 
-The hard way (manually download and install):
+The hard way (manually clone and install):
 ```
-wget https://github.com/tobybreckon/pdfjam-extras/archive/refs/heads/master.zip
-unzip master.zip
+git clone git@github.com:tobybreckon/pdfjam-extras.git
 cd pdfjam-extras-master
 sudo sh ./install.sh
 ```
