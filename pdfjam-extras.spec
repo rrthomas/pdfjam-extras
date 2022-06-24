@@ -1,5 +1,5 @@
 ################################################################################
-# rpm package pec file for pdfjam-extras
+# rpm package spec file for pdfjam-extras
 #
 # Copyright (c) 2022 Toby Breckon
 ################################################################################
@@ -15,6 +15,7 @@ BuildArch:      noarch
 Packager:       Toby Breckon
 Requires:       bash
 Requires:       pdfjam
+BuildRequires:  unzip
 BuildRoot:      ~/rpmbuild/
 %undefine _disable_source_fetch
 Source0:        https://github.com/tobybreckon/pdfjam-extras/archive/refs/heads/master.zip
@@ -78,7 +79,7 @@ rm -rf %{_sourcedir}/master.zip
 ################################################################################
 
 %changelog
-* Tue Jun 21 2022 Toby Breckon <toby.breckon@durham.ac.uk>
+* Tue Jun 21 2022 Toby Breckon <toby.breckon@durham.ac.uk> - 0.1
   - package up the original scripts as provided from the pdfjam authors
 
 ################################################################################
