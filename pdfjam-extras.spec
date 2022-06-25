@@ -10,7 +10,7 @@ Release:        0
 Summary:        a set of additional utility scripts for pdfjam
 License:        GPL-2.0-only
 URL:            https://github.com/tobybreckon/pdfjam-extras/
-Group:          System
+Group:          Productivity/Publishing/PDF
 BuildArch:      noarch
 Packager:       Toby Breckon
 Requires:       bash
