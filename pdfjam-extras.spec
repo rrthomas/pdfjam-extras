@@ -65,7 +65,6 @@ rm -rf %{_sourcedir}/master.zip
 %{_bindir}/pdfpun
 %{_mandir}/man1/pdf180.1.gz
 %{_mandir}/man1/pdf270.1.gz
-%{_mandir}/man1/pdf270.1.gz
 %{_mandir}/man1/pdf90.1.gz
 %{_mandir}/man1/pdfbook.1.gz
 %{_mandir}/man1/pdfflip.1.gz
