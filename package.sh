@@ -83,10 +83,15 @@ case $1 in
     dpkg-deb --info $TARGET_DIR.deb
 
     ;;
+  clean)
 
+    rm -f ${PACKAGE_NAME}_$VERSION-${RELEASE}_$ARCHITECTURE_DEB.deb
+    rm -f $PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm
+
+    ;;
   *)
     echo
-    echo "usage: package.sh [rpm | deb]"
+    echo "usage: package.sh [rpm | deb | clean]"
     echo
     echo "$PACKAGE_NAME packager script - Toby Breckon, 2022+ ]"
     echo
