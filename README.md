@@ -36,7 +36,7 @@ sudo rpm -i pdfjam-extras-0.1-0.noarch.rpm
 The _other_ **easy way** (via a pre-packaged .deb package):
 ```
 wget https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras_0.1-1_all.deb
-sudo dpkg -i pdfjam-extras-0.1-0.noarch.rpm
+sudo dpkg -i pdfjam-extras_0.1-1_all.deb
 ```
 [following .deb package convention this installs the scripts into ``/usr/bin``
 + the .deb file is not digitally signed]
