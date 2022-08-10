@@ -1,12 +1,11 @@
 #!/bin/sh
 ##
 ################################################################################
-# generic packager script - package software as rpm and deb
+# generic packager script - package software as .rpm or .deb Linux package
 #
 # Copyright (c) 2022 Toby Breckon
 ################################################################################
 ##
-
 PACKAGE_NAME=pdfjam-extras
 VERSION=0.1
 RELEASE=1
@@ -16,16 +15,29 @@ MAINTAINER="Toby Breckon, http://breckon.org/toby/"
 DEPENDS="pdfjam"
 URL=https://github.com/tobybreckon/pdfjam-extras/
 DESCRIPTION="a set of additional utility scripts for pdfjam"
-
 ##
 ################################################################################
 ##
+# files as source destination pairs (inc. wildcards), each pair on new line
+
+FILES=( "bin/* /usr/bin"
+        "man1/* /usr/man/man1"
+      )
+##
+################################################################################
+# Preset this script to fail on error
+set -e
+################################################################################
 
 case $1 in
 
   rpm)
 
-    # package as rpm
+    # package as rpm, and sign using default key for current user following
+    # convention for rpm based Linux distributions
+
+    (test -e $PWD/$PACKAGE_NAME.spec) ||
+      (echo "Error: $PACKAGE_NAME.spec missing" && exit 1)
 
     BASE_DIR=$PWD
 
@@ -33,21 +45,26 @@ case $1 in
     ln -sf $PWD/$PACKAGE_NAME.spec ~/rpmbuild/SPECS/
     cd ~/rpmbuild/
     rpmbuild -bb SPECS/$PACKAGE_NAME.spec
-    sudo rpmsign --addsign RPMS/noarch/$PACKAGE_NAME-$VERSION-0.$ARCHITECTURE_RPM.rpm
-    rpm --checksig RPMS/noarch/$PACKAGE_NAME-$VERSION-0.$ARCHITECTURE_RPM.rpm
-    cp ~/rpmbuild/RPMS/noarch/$PACKAGE_NAME-$VERSION-0.$ARCHITECTURE_RPM.rpm $BASE_DIR
+    sudo rpmsign --addsign RPMS/noarch/$PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm
+    rpm --checksig RPMS/noarch/$PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm
+    cp ~/rpmbuild/RPMS/noarch/$PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm $BASE_DIR
     ;;
 
   deb)
 
-    # package as deb
+    # package as deb, but don't sign package following default for
+    # .deb based based Linux distributions
 
     TARGET_DIR=${PACKAGE_NAME}_$VERSION-${RELEASE}_$ARCHITECTURE_DEB
-    mkdir -p $TARGET_DIR/usr/bin
-    mkdir -p $TARGET_DIR/usr/man/man1
 
-    cp bin/* $TARGET_DIR/usr/bin
-    cp man1/* $TARGET_DIR/usr/man/man1
+    for PAIR in "${FILES[@]}"; do
+      # ref: https://victorwyee.com/engineering/loop-over-tuples-in-bash/
+      read -a strarr <<< "$PAIR"
+      FILE=${strarr[0]}
+      DIRECTORY=${strarr[1]}
+      mkdir -p $TARGET_DIR/$DIRECTORY
+      cp $FILE $TARGET_DIR/$DIRECTORY
+    done
 
     mkdir -p $TARGET_DIR/DEBIAN
 
@@ -60,7 +77,7 @@ case $1 in
     echo "Description: $DESCRIPTION" >> $TARGET_DIR/DEBIAN/control
 
     dpkg --build $TARGET_DIR
-    
+
     rm -rf $TARGET_DIR
 
     dpkg-deb --info $TARGET_DIR.deb
