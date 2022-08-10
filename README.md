@@ -6,7 +6,7 @@ A separately packaged version of the 'wrapper' scripts that previously were dist
 
 **what** ? : a packaged version of the ``pdf[nup,pun,join,90,180,270,flip,book,pocketmod,slides*up]`` scripts that were originally included (and installed) as part of [pdfjam](https://github.com/DavidFirth/pdfjam).
 
-**[RPM download here](https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras-0.1-0.noarch.rpm)** and manual install instructions below.
+**[RPM download here](https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras-0.1-0.noarch.rpm)**, **[.deb download here](https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras_0.1-1_all.deb)**  and manual install instructions below.
 
 These scripts are explicitly **not supported** by the original authors of [pdfjam](https://github.com/DavidFirth/pdfjam) for their [own reasons](https://github.com/DavidFirth/pdfjam-extras). It is indended this repo can become a place for _mild_ support as needed.  They are licensed under the [GPL](COPYING).
 
@@ -42,7 +42,7 @@ sudo dpkg -i pdfjam-extras-0.1-0.noarch.rpm
 + the .deb file is not digitally signed]
 
 
-The _relatively_ **harder way** (manually clone and install):
+The _slightly_ **harder way** (manually clone and install):
 ```
 git clone git@github.com:tobybreckon/pdfjam-extras.git
 cd pdfjam-extras-master
