@@ -37,7 +37,7 @@ case $1 in
     # convention for rpm based Linux distributions
 
     (test -e $PWD/$PACKAGE_NAME.spec) ||
-      (echo "Error: $PACKAGE_NAME.spec missing" && exit 1)
+      (echo "Error: $PACKAGE_NAME.spec file missing" && exit 1)
 
     BASE_DIR=$PWD
 
