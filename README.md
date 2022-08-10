@@ -38,8 +38,7 @@ The _other_ **easy way** (via a pre-packaged .deb package):
 wget https://github.com/tobybreckon/pdfjam-extras/releases/download/v0.1/pdfjam-extras_0.1-1_all.deb
 sudo dpkg -i pdfjam-extras_0.1-1_all.deb
 ```
-[following .deb package convention this installs the scripts into ``/usr/bin``
-+ the .deb file is not digitally signed]
+[following .deb package convention this installs the scripts into ``/usr/bin`` + the .deb file is not digitally signed]
 
 
 The _slightly_ **harder way** (manually clone and install):
