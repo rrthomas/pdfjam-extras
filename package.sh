@@ -92,6 +92,7 @@ case $1 in
     rm -f $PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm
 
     ;;
+    
   *)
     echo
     echo "usage: package.sh [rpm | deb | clean]"
