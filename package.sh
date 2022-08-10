@@ -83,7 +83,10 @@ case $1 in
     dpkg-deb --info $TARGET_DIR.deb
 
     ;;
+
   clean)
+
+    # remove built packages
 
     rm -f ${PACKAGE_NAME}_$VERSION-${RELEASE}_$ARCHITECTURE_DEB.deb
     rm -f $PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm
