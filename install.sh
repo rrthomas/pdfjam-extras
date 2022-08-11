@@ -1,4 +1,4 @@
-#!bin/sh
+#!bin/bash
 ##
 ################################################################################
 # pdfjam-extras - basic manual install script
