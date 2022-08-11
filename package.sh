@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ##
 ################################################################################
 # generic packager script - package software as .rpm or .deb Linux package
@@ -12,7 +12,7 @@ RELEASE=1
 ARCHITECTURE_DEB=all
 ARCHITECTURE_RPM=noarch
 MAINTAINER="Toby Breckon, http://breckon.org/toby/"
-DEPENDS="pdfjam"
+DEPENDS="texlive-extra-utils"
 URL=https://github.com/tobybreckon/pdfjam-extras/
 DESCRIPTION="a set of additional utility scripts for pdfjam"
 ##
