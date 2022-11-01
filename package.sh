@@ -12,7 +12,7 @@ RELEASE=1
 ARCHITECTURE_DEB=all
 ARCHITECTURE_RPM=noarch
 MAINTAINER="Toby Breckon, http://breckon.org/toby/"
-DEPENDS="pdfjam"
+DEPENDS="texlive-extra-utils"
 URL=https://github.com/tobybreckon/pdfjam-extras/
 DESCRIPTION="a set of additional utility scripts for pdfjam"
 ##
@@ -92,7 +92,7 @@ case $1 in
     rm -f $PACKAGE_NAME-$VERSION-$((RELEASE-1)).$ARCHITECTURE_RPM.rpm
 
     ;;
-    
+
   *)
     echo
     echo "usage: package.sh [rpm | deb | clean]"
